@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randevu Al | Klinik Psikolog Ebru Kaymak</title>
+    <meta name="description"
+        content="Klinik Psikolog Ebru Kaymak'tan online veya yüz yüze randevu alın. WhatsApp üzerinden hızlı randevu oluşturun.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-title">Klinik Psikolog</span>
+                <span class="logo-name">Ebru Kaymak</span>
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Ana Sayfa</a></li>
+                <li><a href="index.html#about" class="nav-link">Hakkımda</a></li>
+                <li><a href="index.html#expertise" class="nav-link">Uzmanlıklar</a></li>
+                <li><a href="index.html#contact" class="nav-link btn-contact">İletişim</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Appointment Section -->
+    <section class="section appointment-section">
+        <div class="container">
+            <div class="appointment-card">
+                <h1>WhatsApp Randevu Formu</h1>
+                <p class="form-description">Formu doldurun, WhatsApp'tan otomatik mesaj ile randevu talebinizi gönderin.
+                </p>
+
+                <form id="whatsapp-form">
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="fullname">Ad Soyad *</label>
+                            <input type="text" id="fullname" required placeholder="Adınız Soyadınız">
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="phone">Telefon *</label>
+                            <input type="tel" id="phone" required placeholder="05XX XXX XX XX">
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="email">E-posta *</label>
+                        <input type="email" id="email" required placeholder="ornek@email.com">
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="service">Hizmet Türü *</label>
+                        <select id="service" required>
+                            <option value="" disabled selected>Hizmet seçiniz</option>
+                            <option value="Bireysel Terapi">Bireysel Terapi</option>
+                            <option value="Çift Terapisi">Çift Terapisi</option>
+                            <option value="Ergen Terapisi">Ergen Terapisi</option>
+                            <option value="Oyun Terapisi">Oyun Terapisi</option>
+                            <option value="EMDR Terapisi">EMDR Terapisi</option>
+                            <option value="Online Terapi">Online Terapi</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group half-width">
+                            <label for="date">Tercih Edilen Tarih *</label>
+                            <input type="date" id="date" required>
+                        </div>
+                        <div class="form-group half-width">
+                            <label for="time">Tercih Edilen Saat *</label>
+                            <select id="time" required>
+                                <option value="" disabled selected>Saat seçiniz</option>
+                                <option value="09:00 - 12:00">09:00 - 12:00</option>
+                                <option value="12:00 - 15:00">12:00 - 15:00</option>
+                                <option value="15:00 - 18:00">15:00 - 18:00</option>
+                                <option value="18:00 - 21:00">18:00 - 21:00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="notes">Notlar</label>
+                        <textarea id="notes" rows="4" maxlength="500"
+                            placeholder="Eklemek istediğiniz özel notlar..."></textarea>
+                        <div class="char-counter"><span id="char-count">0</span>/500 karakter</div>
+                    </div>
+
+                    <button type="submit" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> WhatsApp'tan Randevu Talep Et
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Klinik Psikolog Ebru Kaymak. Tüm hakları saklıdır.</p>
+            <p style="margin-top: 10px; font-size: 0.8rem;">Bu site <a href="https://www.bayraktaryazilim.com.tr"
+                    target="_blank" style="color: #95a5a6; text-decoration: none; transition: color 0.3s;">BAYRAKTAR
+                    YAZILIM</a> tarafından yapılmıştır.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
